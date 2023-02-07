@@ -1,0 +1,33 @@
+@media screen and (min-width:700px)
+{
+    body 
+    {
+        background-color: rgb(237, 235, 191);
+        flex-direction: column;
+    }
+
+    .faq
+    {
+        flex-direction: row;    
+        margin: 2rem;
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    .faq__decoration
+    {
+        flex: 1 1 50%;
+        position: relative;
+        transform: translateX(-15%);
+    }
+    .faq__content
+    {
+        flex: 1 1 50%;
+        margin:0;
+        padding:2rem;
+        align-items: flex-start;
+
+    }
+}

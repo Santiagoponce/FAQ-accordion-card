@@ -10,15 +10,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/desktop.css">
+
 </head>
 <body>
   <main>
-    <section class="faq">
+    <div class="faq">
 
-      <picture class="faq__ilustration">
+    <div class="faq__decoration">
+      <picture class="faq__decoration-img">
         <source srcset="images/illustration-woman-online-desktop.svg" media="(min-width:700px)">
         <img alt="" src="images/illustration-woman-online-mobile.svg">
       </picture>
+
+      <picture class="faq__decoration-bg">
+        <source srcset="images/bg-pattern-desktop.svg" media="(min-width:700px)">
+        <img alt="" src="images/bg-pattern-mobile.svg">
+      </picture>
+
+    </div>
+
+    <section class="faq__content">
       <h1 class="faq__header">faq</h1>
       <ul class="faq__list">
 
@@ -49,7 +61,9 @@
           <p class="faq__answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
         </li>
       </ul>
-    </section> 
+    </section>
+
+  </div> 
   </main>
 </body>
 </html>
