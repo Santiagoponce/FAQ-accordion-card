@@ -36,9 +36,9 @@ body
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--Soft-violet);
     min-height: 100vh;
-
+    background: linear-gradient(var(--Soft-violet),
+    var(--Soft-blue));
     font-family: 'Kumbh Sans', sans-serif;
     font-size:1rem;
 }
@@ -56,7 +56,6 @@ main
     display: flex;
     flex-direction: column;
     align-items: center;
-
     border-radius: 20px;
     position: relative;
     min-width: 280px;
@@ -68,14 +67,15 @@ main
 {
     display: flex;
     position: absolute;
-    inline-size: 75%;
+    justify-content: center;
+    inline-size: 100%;
     transform: translateY(-58.9%);
 
 
 }
 .faq__decoration >*
 {
-    inline-size: 100%;
+    inline-size: 85%;
 }
 
 .faq__decoration-bg
@@ -89,6 +89,12 @@ main
 .faq__decoration-img
 {
     z-index: 1;
+}
+
+.faq__decoration-box
+{
+    position: absolute;
+    display: none;
 }
 
 .faq__content
@@ -146,7 +152,10 @@ main
 }
 .faq__answer
 {
+    display: none;
     margin-top: .5rem;
     line-height: 1rem;
     opacity: .7;
 }
+
+
