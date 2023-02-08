@@ -2,18 +2,14 @@
 {
     body 
     {
+        flex-direction: row;
         background: linear-gradient(rgb(240, 240, 126),var(--Soft-red));        
-        flex-direction: column;
     }
     
     .faq
     {
         flex-direction: row;    
         margin: 0 2rem;
-        position: relative;
-        padding: 0;
-        overflow: hidden;
-
     }
 
     main
@@ -26,37 +22,51 @@
     {
         flex: 1 1 50%;
         position: relative;
+        transform: none;
+        align-items: stretch;
+        display: flex;
 
-        transform: translateX(-25%);
     }
-    .faq__decoration >*
-{
-    inline-size:100%;
-}
+
+        .faq__decoration-wrapper
+    {
+        justify-content: space-around;
+        position: static;
+        overflow: hidden;
+        background:no-repeat url(../images/bg-pattern-desktop.svg);
+        background-size: 200%;
+        background-position-x: right;
+        background-position-y: center;     }
+
+    .faq__decoration-wrapper > *
+    {
+        transform: translateX(-15%);
+        inline-size: 100%;
+
+    }
 
 
-.faq__decoration-bg
-{
+    .faq__decoration-bg
+    {
+        
+        transform: translateY(15%);
+        transform: translateX(-15%);
 
-    transform: translateY(15%);
-    transform: translateX(-15%);
+        scale: 1.5;
+    }
 
-    scale: 1.5;
-}
-
-.faq__decoration-box
-{
-    position: absolute;
-    scale: .5;
-    display: inline;
-    z-index: 3;
-    transform: translateX(-100%);
-}
+    .faq__decoration-box
+    {
+        position: absolute;
+        scale: .4;
+        display: inline;
+        z-index: 3;
+        transform: translateX(-120%) translateY(20%);
+    }
     .faq__content
     {
         flex: 1 1 50%;
-        margin:0;
-        padding:2rem;
+        margin:2rem;
         align-items: flex-start;
     }
 
