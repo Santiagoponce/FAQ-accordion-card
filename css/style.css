@@ -57,7 +57,7 @@ main
     flex-direction: column;
     border-radius: 20px;
     position: relative;
-    min-width: 250px;
+    min-width: 75vw;
 
 }
 /*  *********************************************** */
@@ -150,19 +150,31 @@ main
 {
     content: url(../images/icon-arrow-down.svg);
 }
+.faq__question--active::after
+{
+    content: url(../images/icon-arrow-down.svg);
+    transform: rotateZ(180deg);
+    transition-duration: 1s;
+}
+
 
 .faq__question
 {
     display: flex;
     justify-content: space-between;
 
+
 }
 .faq__answer
 {
-    display: none;
     margin-top: .5rem;
     line-height: 1rem;
     opacity: .7;
+    max-inline-size: 25rem;
 }
 
+.hidden
+{
+        display: none;
+}
 

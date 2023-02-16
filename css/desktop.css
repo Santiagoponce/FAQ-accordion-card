@@ -75,4 +75,12 @@
     {
         text-align: start;
     }
+
+
+    .faq__answer
+{
+
+    max-inline-size: 20rem;
+}
+
 }
