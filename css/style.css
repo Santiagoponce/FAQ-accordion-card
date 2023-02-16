@@ -20,6 +20,11 @@
 --Light-grayish-blue: hsl(240, 5%, 91%);
 }
 
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
 * {
     padding: 0;
     margin: 0;
@@ -57,7 +62,7 @@ main
     flex-direction: column;
     border-radius: 20px;
     position: relative;
-    min-width: 75vw;
+    min-width: 250px;
 
 }
 /*  *********************************************** */
@@ -154,7 +159,7 @@ main
 {
     content: url(../images/icon-arrow-down.svg);
     transform: rotateZ(180deg);
-    transition-duration: 1s;
+    transition-duration: .1s;
 }
 
 
@@ -162,8 +167,11 @@ main
 {
     display: flex;
     justify-content: space-between;
+}
 
-
+.faq__question--active
+{
+    font-weight: 700;
 }
 .faq__answer
 {
@@ -173,8 +181,19 @@ main
     max-inline-size: 25rem;
 }
 
+
+
 .hidden
 {
         display: none;
 }
 
+
+.attribution
+{
+    color: var(--Very-dark-desaturated-blue);
+    text-align: center;
+    line-height: 1.5rem;
+    margin: 1rem auto;
+    max-inline-size: 15rem;
+}

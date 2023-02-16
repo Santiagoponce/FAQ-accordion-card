@@ -28,6 +28,13 @@
 
     }
 
+
+    .faq__decoration-img 
+    {
+        inline-size: 100%;
+        transform:translateX(-15%)
+    }
+
         .faq__decoration-wrapper
     {
         justify-content: space-around;
@@ -38,12 +45,7 @@
         background-position-x: right;
         background-position-y: center;     }
 
-    .faq__decoration-wrapper > *
-    {
-        transform: translateX(-15%);
-        inline-size: 100%;
 
-    }
 
 
     .faq__decoration-bg
@@ -58,10 +60,11 @@
     .faq__decoration-box
     {
         position: absolute;
-        scale: .4;
+        width: 8em;
         display: inline;
         z-index: 3;
-        transform: translateX(-120%) translateY(20%);
+        left: 0;
+        transform: translateX(-50%) translateY(25%);
     }
     .faq__content
     {
@@ -71,16 +74,13 @@
     }
 
 
+
     .faq h1
     {
         text-align: start;
     }
 
 
-    .faq__answer
-{
 
-    max-inline-size: 20rem;
-}
 
 }
