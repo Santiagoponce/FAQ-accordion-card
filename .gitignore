@@ -17,5 +17,4 @@
 .prettierignore
 
 *.txt
-
-.vscode/
+*.md
